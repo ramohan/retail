@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>
+			Add Item
+		</title>
+	</head>
+	<body bgcolor="blue">
+		<form action = "/save/" method = "POST">
+			{% csrf_token %}
+			<table align="center" border=1>
+				<tr><th align="center"><font color = "red">Serial Number</font></th><td><input type="text" name="serial_no" value={{serial_no}}></td></tr>
+				<tr><th align="center"><font color = "red">Enter Item Category</font></th><td><input type="text" name="IC"></td></tr>
+				<tr><th align="center"><font color = "red">Item Sub Category</font></th><td><input type="text" name="ISC"></td></td></tr>
+				<tr><th align="center"><font color = "red">Item Name</font></th><td><input type="text" name="IN"></td></td></tr>
+				<tr><th align="center"><font color = "red">Quantity</font></th><td><input type="text" name="quantity"></td></td></tr>
+				<tr><th align="center"><font color = "red">Price per Unit</font></th><td><input type="text" name="price"></td></td></tr>
+				<tr><td></td><td><input type="submit" value="Add"></td></tr>
+			</table>
+		</form>
+	</body>
+</html>

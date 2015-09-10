@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<title>
+			Home Page
+		</title>
+	</head>
+	<body bgcolor="blue">
+		<form action = "/get_info/" method = "POST">
+			{% csrf_token %}
+			<table align="center" border=1>
+				<tr><th align="center"><font color = "red">Enter Serial Number to Search</font></th><th><input type="text" maxlength="5" size="5" name="serial_no"></th><th><input type="submit" value="Search"></th></tr>
+			</table>
+		</form>
+	</body>
+</html>

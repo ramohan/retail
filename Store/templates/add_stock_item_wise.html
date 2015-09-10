@@ -1,0 +1,18 @@
+<html>
+	<title>
+		Add_Stock_Item_Wise
+	</title>
+	<body>
+		<form action="/add_item_wise/" method="POST">
+			{% csrf_token %}
+			<table border=1 align="center">
+				<tr><th>Enter the Item Number</th><th><input type="text" name="serial_info"></th></tr>
+				<tr><td colspan="2" align="center"><font color="red">OR</font></td></tr>
+				<tr><th>Enter the Item Name</th><th><input type="text" name="item_name"></th></tr>
+				<tr><td colspan="2" align="center"><font color="red">OR</font></td></tr>
+				<tr><th colspan="2">Click&nbsp;<a href="/add_stock_one_shot/">HERE</a>&nbsp; &nbsp; Add the multiple Items in One Place</th></tr>
+				<tr><td></td><td><input type="submit" value="SUBMIIT"></td></tr>
+			</table>
+		</form>
+	</body>
+</html>
